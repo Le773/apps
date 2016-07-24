@@ -50,14 +50,18 @@
             android:name=".thread.UpdateUIActivity"
             android:label="@string/title_activity_update_ui"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
-        android:name=".activity.MainServiceActivity"
-        android:label="@string/title_activity_main_service"
-        android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".activity.MainServiceActivity"
+            android:label="@string/title_activity_main_service"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <service android:name=".services.MyService" />
-        <service android:name=".services.MyIntentService"/>
+        <service android:name=".services.MyIntentService" />
+
+        <activity
+            android:name=".activity.ClockActivity"
+            android:label="@string/title_activity_clock"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

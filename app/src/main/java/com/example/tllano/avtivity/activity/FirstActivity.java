@@ -30,6 +30,7 @@ public class FirstActivity extends AppCompatActivity {
 
     EditText edit, showContent;
     Button startNormalActivity, startDialogActivity, btn_save, to_main, showContacts, datamain, login, updateui, btnService;
+    Button timeClock;
     public static final String TAG = "FirstActivity";
 
     @Override
@@ -56,6 +57,7 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, DialogActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -151,6 +153,15 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, MainServiceActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        timeClock = (Button) findViewById(R.id.timeclock);
+        timeClock.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, ClockActivity.class);
                 startActivity(intent);
             }
         });

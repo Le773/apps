@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.database.Cursor;
+import android.widget.TextView;
 
 import com.example.tllano.avtivity.R;
 
@@ -17,15 +18,19 @@ public class DialogActivity extends AppCompatActivity {
     ListView contactsView;
     ArrayAdapter<String> adapter;
     List<String> contactsList = new ArrayList<String>();
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dialog);
-        contactsView = (ListView) findViewById(R.id.contacts_view);
+        textView = (TextView) findViewById(R.id.dialog_tv_01);
+
+/*
+       contactsView = (ListView) findViewById(R.id.contacts_view);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, contactsList);
         contactsView.setAdapter(adapter);
-        readContacts();
+        readContacts();*/
     }
 
     private void readContacts() {

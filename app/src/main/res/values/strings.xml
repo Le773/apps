@@ -23,4 +23,5 @@
     <string name="title_activity_noti">NotiActivity</string>
     <string name="title_activity_update_ui">UpdateUIActivity</string>
     <string name="title_activity_main_service">MainServiceActivity</string>
+    <string name="title_activity_clock">ClockActivity</string>
 </resources>
