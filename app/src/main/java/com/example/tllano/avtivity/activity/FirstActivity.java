@@ -29,7 +29,7 @@ import java.io.OutputStreamWriter;
 public class FirstActivity extends AppCompatActivity {
 
     EditText edit, showContent;
-    Button startNormalActivity, startDialogActivity, btn_save, to_main, showContacts, datamain, login, updateui;
+    Button startNormalActivity, startDialogActivity, btn_save, to_main, showContacts, datamain, login, updateui, btnService;
     public static final String TAG = "FirstActivity";
 
     @Override
@@ -145,6 +145,15 @@ public class FirstActivity extends AppCompatActivity {
             }
         });
 
+        // service main
+        btnService = (Button) findViewById(R.id.service_main_01);
+        btnService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, MainServiceActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
