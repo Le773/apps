@@ -10,10 +10,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import com.example.tllano.avtivity.R;
+import com.example.tllano.avtivity.services.MyIntentService;
 import com.example.tllano.avtivity.services.MyService;
 
 public class MainServiceActivity extends Activity  implements View.OnClickListener {
@@ -23,6 +25,10 @@ public class MainServiceActivity extends Activity  implements View.OnClickListen
 
     private Button bindService;
     private Button unbindService;
+
+    private Button startIntentService;
+
+
 
     private MyService.DownloadBinder downloadBinder;
 
@@ -58,6 +64,9 @@ public class MainServiceActivity extends Activity  implements View.OnClickListen
 
         bindService.setOnClickListener(this);
         unbindService.setOnClickListener(this);
+
+        startIntentService = (Button) findViewById(R.id.start_intent_service);
+        startIntentService.setOnClickListener(this);
     }
 
     @Override
@@ -78,6 +87,12 @@ public class MainServiceActivity extends Activity  implements View.OnClickListen
             case R.id.unbind_service:
                 unbindService(connection);
                 break;
+            case R.id.start_intent_service:
+                Log.d("intentService", "intentService executed");
+                Intent intentService = new Intent(MainServiceActivity.this, MyIntentService.class);
+                startService(intentService);
+                break;
+
             default:
                 break;
         }

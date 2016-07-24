@@ -33,6 +33,8 @@
         android:id="@+id/start_intent_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start IntentService" />
+        android:background="@color/gray"
+        android:textAllCaps="false"
+        android:text="IntentService" />
 
 </LinearLayout>
