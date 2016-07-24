@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/start_normal_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Normal Activity"
+        android:background="@color/tomato" />
+
+    <Button
+        android:id="@+id/start_dialog_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start_dialog_activity"
+        android:background="@color/coral"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:background="@color/gray">
+            </Button>
+            <EditText
+                android:id="@+id/textview_save_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Type something here"/>
+        </TableRow>
+        <TableRow>
+            <EditText
+                android:id="@+id/textview_read_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+                </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/textview_first_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="this is MainActivity"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/to_main_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main"
+                android:background="@color/gray">
+            </Button>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/show_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看联系人" />
+            <Button
+                android:id="@+id/tologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:background="@color/gray"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/datamain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数据存储"
+                android:background="@color/gray"
+                android:clickable="false"/>
+        </TableRow>
+
+<!--        <TableRow>
+            <Button
+                android:id="@+id/tologin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:background="@color/gray"/>
+        </TableRow>-->
+
+        <TableRow>
+            <Button
+                android:id="@+id/update_ui_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更新UI">
+            </Button>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

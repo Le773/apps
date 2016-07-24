@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tllano.avtivity">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.NormalActivity"
+            android:label="@string/title_activity_normal" />
+        <activity
+            android:name=".activity.DialogActivity"
+            android:label="@string/title_activity_dialog"
+            android:theme="@style/AlertDialog.AppCompat" />
+        <activity
+            android:name=".activity.FirstActivity"
+            android:label="@string/title_activity_first">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ContactsActivity"
+            android:label="@string/title_activity_contacts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".data.DataMainActivity" />
+        <activity
+            android:name=".notification.NotiActivity"
+            android:label="@string/title_activity_noti"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".thread.UpdateUIActivity"
+            android:label="@string/title_activity_update_ui"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".services.MyService" />
+
+        <activity
+            android:name=".activity.MainServiceActivity"
+            android:label="@string/title_activity_main_service"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
