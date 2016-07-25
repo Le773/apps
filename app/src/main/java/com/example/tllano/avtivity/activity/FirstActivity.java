@@ -30,7 +30,7 @@ public class FirstActivity extends AppCompatActivity {
 
     EditText edit, showContent;
     Button startNormalActivity, startDialogActivity, btn_save, to_main, showContacts, datamain, login, updateui, btnService;
-    Button timeClock;
+    Button timeClock, btnNotify;
     public static final String TAG = "FirstActivity";
 
     @Override
@@ -162,6 +162,15 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FirstActivity.this, ClockActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnNotify = (Button) findViewById(R.id.notifition_01);
+        btnNotify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(FirstActivity.this, NotificationActivity.class);
                 startActivity(intent);
             }
         });
