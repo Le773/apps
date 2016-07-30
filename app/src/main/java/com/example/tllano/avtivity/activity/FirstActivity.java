@@ -17,6 +17,7 @@ import com.example.tllano.avtivity.R;
 import com.example.tllano.avtivity.data.DataMainActivity;
 import com.example.tllano.avtivity.login.LoginActivity;
 import com.example.tllano.avtivity.thread.UpdateUIActivity;
+import com.example.tllano.avtivity.uiactivity.ResetLayoutActivity;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -233,6 +234,11 @@ public class FirstActivity extends AppCompatActivity {
 
     public void toToggle(View view) {
         Intent intent = new Intent(FirstActivity.this, DarkActivity.class);
+        startActivity(intent);
+    }
+
+    public void resetLayout(View view) {
+        Intent intent = new Intent(FirstActivity.this, ResetLayoutActivity.class);
         startActivity(intent);
     }
 }
