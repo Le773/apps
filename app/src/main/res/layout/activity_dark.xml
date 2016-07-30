@@ -1,13 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/content">
 
-    <Button
-        android:id="@+id/dark_toggle_01"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Toggle Module"
-        android:onClick="onToggleClick"/>
+        android:layout_height="match_parent">
 
+        <Button
+            android:id="@+id/dark_toggle_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toggle Module"
+            android:onClick="onToggleClick"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s1"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s2"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s3"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s4"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s5"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s6"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s7"
+            android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s8"
+            android:textAllCaps="false"/>
+    </LinearLayout>
 </RelativeLayout>
+
