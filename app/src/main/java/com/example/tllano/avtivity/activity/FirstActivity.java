@@ -230,4 +230,9 @@ public class FirstActivity extends AppCompatActivity {
         }
         return content.toString();
     }
+
+    public void toToggle(View view) {
+        Intent intent = new Intent(FirstActivity.this, DarkActivity.class);
+        startActivity(intent);
+    }
 }

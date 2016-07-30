@@ -50,6 +50,7 @@ public class NotificationActivity extends Activity {
         Notification notify = new Notification.Builder(this)
                 .setAutoCancel(true)
                 .setTicker("new message")
+                .setSmallIcon(R.drawable.banana_pic)
                 .setContentText("today very happy")
                 .setWhen(System.currentTimeMillis())
                 .setContentIntent(pi)

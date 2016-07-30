@@ -119,6 +119,14 @@
                 android:background="@color/gray"
                 android:text="查看消息">
             </Button>
+            <Button
+                android:id="@+id/dark_toggle_interface"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:onClick="toToggle"
+                android:text="夜间模式">
+            </Button>
         </TableRow>
 
     </TableLayout>
