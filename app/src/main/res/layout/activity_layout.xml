@@ -12,10 +12,24 @@
         android:onClick="onAddClick"
         android:textAllCaps="false"
         android:text="Click To Add Item" />
+
     <LinearLayout
         android:id="@+id/verticalContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:animateLayoutChanges="true"
-        android:orientation="vertical" />
+        android:orientation="vertical" >
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加控件"/>
+
+        <Button
+            android:id="@+id/remove_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="移除控件"/>
+
+    </LinearLayout> <!-- 实现添加/删除其中控件时，带有默认动画-->
 </LinearLayout>
