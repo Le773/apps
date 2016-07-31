@@ -22,7 +22,7 @@ public class ActivityCollector {
 
     public static void finishAll() {
         for(Activity activity:activities) {
-            activity.finish();s
+            activity.finish();
         }
     }
 }

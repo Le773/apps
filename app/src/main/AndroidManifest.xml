@@ -71,6 +71,8 @@
         <activity android:name=".uiactivity.ResetLayoutActivity" />
         <activity android:name=".uiactivity.AnimatorActivity" />
         <activity android:name=".uiactivity.ScreenOnActivity"></activity>
+        <activity android:name=".uiactivity.AnimatorActivity"></activity>
+
     </application>
 
 </manifest>

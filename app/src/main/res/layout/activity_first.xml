@@ -118,6 +118,7 @@
                 android:text="ViewPropAnimator"
                 android:onClick="onViewPropAnimator">
             </Button>
+
             <Button
                 android:id="@+id/screen_on_01"
                 android:layout_width="wrap_content"
@@ -126,6 +127,7 @@
                 android:text="ScreenOn"
                 android:onClick="onScreenOn">
             </Button>
+
         </TableRow>
 
         <TableRow>

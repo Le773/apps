@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button
+        android:id="@+id/toggleButton_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Click to Toggle" />
+
+    <Button
+        android:id="@+id/translateStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="translateStart" />
+
+    <Button
+        android:id="@+id/translateEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="translateEnd" />
+
+    <Button
+        android:id="@+id/scaleStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="scaleStart" />
+
+    <Button
+        android:id="@+id/scaleEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="scaleEnd" />
+
+    <Button
+        android:id="@+id/alphaStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="alphaStart" />
+
+    <Button
+        android:id="@+id/alphaEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="alphaEnd" />
+
+    <Button
+        android:id="@+id/rotateStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="rotateStart" />
+
+    <Button
+        android:id="@+id/rotateEnd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="rotateEnd" />
+
+    <ImageView
+        android:id="@+id/prop_animator_imgview_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/apple_pic"
+        />
+
+    <View
+        android:id="@+id/view_prop_animator_01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#AAA" />
+</LinearLayout>
