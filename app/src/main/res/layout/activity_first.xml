@@ -81,6 +81,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="时钟"/>
+            <Button
+                android:id="@+id/reset_layout_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="reset_layout"
+                android:onClick="onResetLayout"/>
         </TableRow>
 
 <!--        <TableRow>

@@ -73,7 +73,8 @@
         <activity android:name=".uiactivity.ScreenOnActivity" />
         <activity android:name=".uiactivity.AnimatorActivity" />
         <activity android:name=".uiactivity.FrameAnimationActivity" />
-        <activity android:name=".uiactivity.FlipperActivity"></activity>
+        <activity android:name=".uiactivity.FlipperActivity" />
+        <activity android:name=".uiactivity.LayoutActivity"></activity>
     </application>
 
 </manifest>
