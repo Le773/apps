@@ -70,9 +70,9 @@
         <activity android:name=".activity.DarkActivity" />
         <activity android:name=".uiactivity.ResetLayoutActivity" />
         <activity android:name=".uiactivity.AnimatorActivity" />
-        <activity android:name=".uiactivity.ScreenOnActivity"></activity>
-        <activity android:name=".uiactivity.AnimatorActivity"></activity>
-
+        <activity android:name=".uiactivity.ScreenOnActivity" />
+        <activity android:name=".uiactivity.AnimatorActivity" />
+        <activity android:name=".uiactivity.FrameAnimationActivity"></activity>
     </application>
 
 </manifest>

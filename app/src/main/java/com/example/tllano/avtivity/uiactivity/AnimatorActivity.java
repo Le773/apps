@@ -69,7 +69,7 @@ public class AnimatorActivity extends BaseActivity implements View.OnClickListen
                 Animation translateIn = new TranslateAnimation(0, 100, 0, 0);
                 // 设置持续时间
                 translateIn.setDuration(500);
-                
+
                 // 设置动画停留在最后一帧
                 /*
                   ****动画结束时，停留在最后一帧*********

@@ -18,6 +18,7 @@ import com.example.tllano.avtivity.data.DataMainActivity;
 import com.example.tllano.avtivity.login.LoginActivity;
 import com.example.tllano.avtivity.thread.UpdateUIActivity;
 import com.example.tllano.avtivity.uiactivity.AnimatorActivity;
+import com.example.tllano.avtivity.uiactivity.FrameAnimationActivity;
 import com.example.tllano.avtivity.uiactivity.ResetLayoutActivity;
 import com.example.tllano.avtivity.uiactivity.ScreenOnActivity;
 
@@ -252,6 +253,11 @@ public class FirstActivity extends AppCompatActivity {
 
     public void onScreenOn(View view) {
         Intent intent = new Intent(FirstActivity.this, ScreenOnActivity.class);
+        startActivity(intent);
+    }
+
+    public void onFrameAnimation(View view) {
+        Intent intent = new Intent(FirstActivity.this, FrameAnimationActivity.class);
         startActivity(intent);
     }
 
