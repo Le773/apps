@@ -18,6 +18,7 @@ import com.example.tllano.avtivity.data.DataMainActivity;
 import com.example.tllano.avtivity.login.LoginActivity;
 import com.example.tllano.avtivity.thread.UpdateUIActivity;
 import com.example.tllano.avtivity.uiactivity.ResetLayoutActivity;
+import com.example.tllano.avtivity.uiactivity.ScreenOnActivity;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -239,6 +240,17 @@ public class FirstActivity extends AppCompatActivity {
 
     public void resetLayout(View view) {
         Intent intent = new Intent(FirstActivity.this, ResetLayoutActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void onViewPropAnimator(View view) {
+        Intent intent = new Intent(FirstActivity.this, AnimatorActivity.class);
+        startActivity(intent);
+    }
+
+    public void onScreenOn(View view) {
+        Intent intent = new Intent(FirstActivity.this, ScreenOnActivity.class);
         startActivity(intent);
     }
 }

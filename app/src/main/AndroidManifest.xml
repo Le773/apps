@@ -68,7 +68,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activity.NotificationActivity" />
         <activity android:name=".activity.DarkActivity" />
-        <activity android:name=".uiactivity.ResetLayoutActivity"></activity>
+        <activity android:name=".uiactivity.ResetLayoutActivity" />
+        <activity android:name=".uiactivity.AnimatorActivity" />
+        <activity android:name=".uiactivity.ScreenOnActivity"></activity>
     </application>
 
 </manifest>
