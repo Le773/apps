@@ -108,6 +108,15 @@
                 android:text="更新Frame Animation"
                 android:onClick="onFrameAnimation">
             </Button>
+            <Button
+                android:id="@+id/first_FlipperActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:background="@color/gray"
+                android:text="更新FlipperActivity"
+                android:onClick="onFlipperActivity">
+            </Button>
         </TableRow>
 
         <TableRow>

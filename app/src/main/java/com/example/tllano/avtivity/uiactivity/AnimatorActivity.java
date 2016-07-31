@@ -133,8 +133,6 @@ public class AnimatorActivity extends BaseActivity implements View.OnClickListen
                 break;
             default:
                 break;
-
         }
-
     }
 }
