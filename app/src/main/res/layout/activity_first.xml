@@ -25,12 +25,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="保存"
+                android:textAllCaps="false"
                 android:background="@color/gray">
             </Button>
             <EditText
                 android:id="@+id/textview_save_01"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:hint="Type something here"/>
         </TableRow>
         <TableRow>
@@ -44,15 +46,35 @@
                 android:id="@+id/textview_first_01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAllCaps="false"
                 android:text="this is MainActivity"/>
         </TableRow>
         <TableRow>
             <Button
-                android:id="@+id/to_main_activity"
+            android:id="@+id/to_main_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:textAllCaps="false"
+            android:text="Main"
+            android:background="@color/gray">
+            </Button>
+            <Button
+                android:id="@+id/transition_activity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Main"
-                android:background="@color/gray">
+                android:text="Transition"
+                android:textAllCaps="false"
+                android:background="@color/gray"
+                android:onClick="onTransition">
+            </Button>
+            <Button
+                android:id="@+id/custom_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="custom"
+                android:textAllCaps="false"
+                android:background="@color/gray"
+                android:onClick="onCustom">
             </Button>
         </TableRow>
         <TableRow>

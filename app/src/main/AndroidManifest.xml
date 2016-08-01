@@ -74,7 +74,9 @@
         <activity android:name=".uiactivity.AnimatorActivity" />
         <activity android:name=".uiactivity.FrameAnimationActivity" />
         <activity android:name=".uiactivity.FlipperActivity" />
-        <activity android:name=".uiactivity.LayoutActivity"></activity>
+        <activity android:name=".uiactivity.LayoutActivity" />
+        <activity android:name=".uiactivity.TransitionActivity" />
+        <activity android:name=".uiactivity.CustomRowActivity"></activity>
     </application>
 
 </manifest>
