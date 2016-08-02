@@ -2,6 +2,9 @@ package com.example.tllano.avtivity.uiactivity;
 
 /**
  * Created by TLLANO on 2016/8/2.
+ * 表示列表中的每一节
+ * 保存节标题
+ * 及此标题下的数据数组子集
  */
 public class SectionItem<T> {
 
