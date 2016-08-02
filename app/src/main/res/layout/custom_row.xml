@@ -9,16 +9,18 @@
         android:id="@+id/leftimage"
         android:layout_width="32dip"
         android:layout_height="32dip"
+        android:background="@color/tomato"
         />
     <ImageView
         android:id="@+id/rightimage"
         android:layout_width="32dip"
         android:layout_height="32dip"
+        android:background="@color/gray"
         android:layout_alignParentRight="true"
         />
     <TextView
         android:id="@+id/line1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@id/rightimage"
         android:layout_toRightOf="@id/leftimage"
