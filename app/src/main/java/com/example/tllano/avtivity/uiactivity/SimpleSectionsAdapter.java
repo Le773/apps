@@ -8,6 +8,7 @@ import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -138,7 +139,33 @@ public abstract class SimpleSectionsAdapter<T> extends BaseAdapter implements Ad
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        switch (getItemViewType(position)) {
+            case TYPE_HEADER:
+                return ;//
+        }
         return null;
+    }
+
+    private View getHeaderView(int position, View convertView, ViewGroup parent ) {
+        if(convertView == null) {
+            convertView = mLayoutInflater.inflate(mHeaderResource, parent, false);
+        }
+        SectionItem<T> item = mKeyedSections.get(position);
+        TextView textView = (TextView) convertView.
+                findViewById(android.R.id.text1);
+        textView.setText(item.getTitle());
+        return  convertView;
+    }
+
+    private View getItemView(int position, View convertView, ViewGroup parent) {
+        if(convertView == null) {
+            convertView = mLayoutInflater.inflate(mHeaderResource, parent, false);
+        }
+        T item = findSectionItemAtPosition(position);
+        TextView textView = (TextView) convertView.
+                findViewById(android.R.id.text1);
+        textView.setText(item.toString());
+        return  convertView;
     }
 
     // 返回给定全局位置的显式列表项
