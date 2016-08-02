@@ -25,6 +25,7 @@ import com.example.tllano.avtivity.uiactivity.FrameAnimationActivity;
 import com.example.tllano.avtivity.uiactivity.LayoutActivity;
 import com.example.tllano.avtivity.uiactivity.ResetLayoutActivity;
 import com.example.tllano.avtivity.uiactivity.ScreenOnActivity;
+import com.example.tllano.avtivity.uiactivity.SectionsActivity;
 import com.example.tllano.avtivity.uiactivity.TransitionActivity;
 
 import java.io.BufferedReader;
@@ -288,6 +289,11 @@ public class FirstActivity extends AppCompatActivity {
     }
     public void onClockLayout(View view) {
         Intent intent = new Intent(FirstActivity.this, ClockLayoutActivity.class);
+        startActivity(intent);
+    }
+
+    public void onSelect(View view) {
+        Intent intent = new Intent(FirstActivity.this, SectionsActivity.class);
         startActivity(intent);
     }
 }

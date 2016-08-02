@@ -28,6 +28,7 @@
                 android:textAllCaps="false"
                 android:background="@color/gray">
             </Button>
+
             <EditText
                 android:id="@+id/textview_save_01"
                 android:layout_width="wrap_content"
@@ -36,11 +37,19 @@
                 android:hint="Type something here"/>
         </TableRow>
         <TableRow>
+            <Button
+                android:id="@+id/selction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="select"
+                android:textAllCaps="false"
+                android:onClick="onSelect">
+            </Button>
             <EditText
                 android:id="@+id/textview_read_01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
-                </TableRow>
+            </TableRow>
         <TableRow>
             <TextView
                 android:id="@+id/textview_first_01"

@@ -4,7 +4,6 @@ import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
@@ -141,9 +140,12 @@ public abstract class SimpleSectionsAdapter<T> extends BaseAdapter implements Ad
     public View getView(int position, View convertView, ViewGroup parent) {
         switch (getItemViewType(position)) {
             case TYPE_HEADER:
-                return ;//
+                return getHeaderView(position, convertView, parent);
+            case TYPE_ITEM:
+                return getItemView(position, convertView, parent);
+            default:
+                return convertView;
         }
-        return null;
     }
 
     private View getHeaderView(int position, View convertView, ViewGroup parent ) {
@@ -167,6 +169,19 @@ public abstract class SimpleSectionsAdapter<T> extends BaseAdapter implements Ad
         textView.setText(item.toString());
         return  convertView;
     }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        T item = findSectionItemAtPosition(position);
+        if( item != null ) {
+            onSectionItemClick(item);
+        }
+    }
+
+    /**
+     * 重写方法以处理特定元素的单击事件，即用户单击的@param 项列表项
+     */
+    public abstract void onSectionItemClick(T item);
 
     // 返回给定全局位置的显式列表项
     private T findSectionItemAtPosition(int position) {
