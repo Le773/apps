@@ -18,6 +18,7 @@ import com.example.tllano.avtivity.data.DataMainActivity;
 import com.example.tllano.avtivity.login.LoginActivity;
 import com.example.tllano.avtivity.thread.UpdateUIActivity;
 import com.example.tllano.avtivity.uiactivity.AnimatorActivity;
+import com.example.tllano.avtivity.uiactivity.ClockLayoutActivity;
 import com.example.tllano.avtivity.uiactivity.CustomRowActivity;
 import com.example.tllano.avtivity.uiactivity.FlipperActivity;
 import com.example.tllano.avtivity.uiactivity.FrameAnimationActivity;
@@ -283,6 +284,10 @@ public class FirstActivity extends AppCompatActivity {
 
     public void onCustom(View view) {
         Intent intent = new Intent(FirstActivity.this, CustomRowActivity.class);
+        startActivity(intent);
+    }
+    public void onClockLayout(View view) {
+        Intent intent = new Intent(FirstActivity.this, ClockLayoutActivity.class);
         startActivity(intent);
     }
 }

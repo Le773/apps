@@ -65,7 +65,15 @@
                 android:text="Transition"
                 android:textAllCaps="false"
                 android:background="@color/gray"
-                android:onClick="onTransition">
+                android:onClick="onTransition"/>
+            <Button
+                android:id="@+id/clock_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="clock layout"
+                android:textAllCaps="false"
+                android:background="@color/gray"
+                android:onClick="onClockLayout">
             </Button>
             <Button
                 android:id="@+id/custom_activity"

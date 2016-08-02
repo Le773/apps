@@ -76,7 +76,8 @@
         <activity android:name=".uiactivity.FlipperActivity" />
         <activity android:name=".uiactivity.LayoutActivity" />
         <activity android:name=".uiactivity.TransitionActivity" />
-        <activity android:name=".uiactivity.CustomRowActivity"></activity>
+        <activity android:name=".uiactivity.CustomRowActivity" />
+        <activity android:name=".uiactivity.ClockLayoutActivity"></activity>
     </application>
 
 </manifest>
